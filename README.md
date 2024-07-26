@@ -33,8 +33,7 @@ I had a raspberry pi zero laying around so next idea came to test this instrumen
 https://github.com/user-attachments/assets/e0a83fda-d1c7-4c1d-b45b-102a0df43bcb
 
 
-<br>
-<br>
+
 **You will need:**
 <br>
  - Raspberry pi zero w2 with power adapter or powerbank
