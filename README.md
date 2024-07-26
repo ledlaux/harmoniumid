@@ -44,7 +44,7 @@ I had a raspberry pi 0 w2 laying around so next idea came to test this instrumen
 
  - Midi keyboard
 
-For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact, not expensive, the key range is enough, also you can edit velocity and midi cc on the device itself.
+For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact, not expensive, the key range is enough, also you can edit velocity and midi cc on the device itself.<br>
 <br>
 **Instructions:**
 <br>
