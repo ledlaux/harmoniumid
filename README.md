@@ -15,8 +15,8 @@ https://www.patreon.com/posts/indian-harmonium-90825095
 https://github.com/eodowd/ds2sfz
 
 3. Convert SFZ file to SF2 soundfont<br>
-You can use Sforzando or Polyphone to do that. I used Polyphone console command<br>
-/Applications/polyphone.app/Contents/MacOS/polyphone -1 filename.sfz -d /Users/user -o midiharmonium    
+You can use Sforzando or Polyphone to do that. I used Polyphone console command on MacOS<br>
+/Applications/polyphone.app/Contents/MacOS/polyphone -1 filename.sfz -d /Users/user/ -o midiharmonium    
 
 Thats it! 
 
