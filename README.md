@@ -14,8 +14,6 @@ https://www.patreon.com/posts/indian-harmonium-90825095
 2. Convert the preset to SFZ format with DSconverter by Eodowd<br>
 https://github.com/eodowd/ds2sfz
 
-3. At this point you can edit attack and decay of the samples in Polyphone app
-
 3. Convert SFZ file to SF2 soundfont.<br>
 You can use Sforzando or Polyphone to do that. I used Polyphone console command<br>
 /Applications/polyphone.app/Contents/MacOS/polyphone -1 filename.sfz -d /Users/user -o filename     
