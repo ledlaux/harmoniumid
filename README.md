@@ -17,8 +17,7 @@ https://github.com/eodowd/ds2sfz
 
 3. At this point you can edit attack and decay of the samples in Polyphone app
 
-3. Convert SFZ file to SF2 soundfont 
-You can use Sforzando or Polyphone to do that
+3. Convert SFZ file to SF2 soundfont. You can use Sforzando or Polyphone to do that.
 I used Polyphone console command
 /Applications/polyphone.app/Contents/MacOS/polyphone -1 filename.sfz -d /Users/user -o filename     
 
