@@ -30,6 +30,7 @@ This instrument has some additional settings which can be asigned to midi keyboa
 
 I had a raspberry pi 0 w2 laying around so next idea came to test this instrument on it, and it worked wonderfully!
 <br>
+<br>
 **You will need:**
 <br>
  - Raspberry pi 0 w2 with power adapter or powerbank
