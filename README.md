@@ -1,16 +1,11 @@
 # MIDI HARMONIUM MADE WITH FLUIDSYNTH
-<br>
-<br>
-<br>
-<br>
+
 In search for the best free sounding harmonium virtual instrument i found **N'hyra Virakah** recorded harmonium in Decent sampler format:
 https://www.youtube.com/watch?v=6j1xUndPMio&t=785s
 
 Than idea arised to try to convert this decent sampler preset and try it with Fluidsynth.
 <br>
-<br>
 **Instructions:**
-<br>
 <br>
 1. Download harmonium Decent sampler preset from<br>
 https://www.patreon.com/posts/indian-harmonium-90825095
@@ -31,17 +26,11 @@ Now you can load this instrument in to the Fluidsynth and play it. To make a por
 This instrument has some additional settings which can be asigned to midi keyboard: volume (CC 7), reverb (CC 91), chorus (CC 93)
 <br>
 <br>
-<br>
-<br>
 ## A prototype of midi harmonium on Raspberry pi zero w2 
 
 I had a raspberry pi 0 w2 laying around so next idea came to test this instrument on it, and it worked wonderfully!
 <br>
-<br>
-<br>
-<br>
 **You will need:**
-<br>
 <br>
  - Raspberry pi 0 w2 with power adapter or powerbank
 
@@ -61,7 +50,6 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 <br>
 <br>
 **Instructions:**
-<br>
 <br>
 1. Install Raspbian Lite OS in headless mode with SSH (instruction could be found in internet)
 
@@ -88,14 +76,10 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 8. Copy script **midiharmonium.sh** file to your home directory /home/pi<br>
   It is simple scipt which starts Fluidsynth with harmonium soundfont and your midi keyboard<br>
   
-  #! /bin/sh<br>
-  fluidsynth -a alsa -z 160 -m alsa_raw -o midi.alsa.device=hw:2,0 -g 1 /home/pi/filename.sf2<br>
-  sleep 10<br>
-
   - Adjust the sample rate with -z parameter (minimal i could use without audio distortion and much of latency was 160)<br>
   - Adjust gain with -g parameter<br>
 
-9. Test midi keyboard connection to get a device name<br>
+9. Test midi keyboard connection to get a device number<br>
   amidi -l<br>
 
 10. Adjust midi device number in midiharmonium.sh file<br>
