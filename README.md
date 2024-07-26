@@ -28,12 +28,15 @@ Now you can load this instrument in to the Fluidsynth and play it. To make a por
 This instrument has some additional settings which can be asigned to midi keyboard: volume (CC 7), reverb (CC 91), chorus (CC 93)
 
 
+
 ## A prototype of midi harmonium on Raspberry pi zero w2 
 
 I had a raspberry pi 0 w2 laying around so next idea came to test this instrument on it, and it worked wonderfully!
 
 
+
 **You will need:**
+
 
  - Raspbery pi 0 w2 with power adapter or powerbank
 
@@ -50,7 +53,9 @@ I had a raspberry pi 0 w2 laying around so next idea came to test this instrumen
 For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact, not expensive, the key range is enough, also you can edit velocity and midi cc on the device itself.
 
 
+
 **Instructions:**
+
 
 1. Install Raspbian Lite OS in headless mode with SSH (instruction could be found in internet)
 
@@ -105,7 +110,7 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 PS. Loading time of the instrument can take up to 1 minute, because of the raspbery pi 0 limited resources. 
 You can make it load little faster by some tweaks (disabling bluetooth in /boot/config.txt. and other)
 
-**Send thanks to the N'hyra Virakah for a great harmonium recording and programming!** 
+### Send thanks to the N'hyra Virakah for a great harmonium recording and programming! 
 
 **ॐ**
 
