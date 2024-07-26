@@ -1,4 +1,4 @@
-## MIDI HARMONIUM MADE WITH FLUIDSYNTH
+# MIDI HARMONIUM MADE WITH FLUIDSYNTH
 
 
 In search for the best free sounding harmonium virtual instrument i found **N'hyra Virakah** recorded harmonium in Decent sampler format:
@@ -35,17 +35,17 @@ I had a raspberry pi 0 w2 laying around so next idea came to test this instrumen
 
 **You will need:**
 
-1) Raspbery pi 0 w2 with power adapter or powerbank
+ - Raspbery pi 0 w2 with power adapter or powerbank
 
-2) Usb hub
+ - Usb hub
 
-3) Any compact usb soundcard or hdmi vga adapter cable with audio out (I could not make raspbery pi audio out to work with my adapter cable so used the sound card. Maybe with different cable it will work, try it. Than will be no need for a usb hub)
+ - Any compact usb soundcard or hdmi vga adapter cable with audio out (I could not make raspbery pi audio out to work with my adapter cable so used the sound card. Maybe with different cable it will work, try it. Than will be no need for a usb hub)
+ 
+ - 3.5mm audio cable to connect to speakers if needed
 
-4) 3.5mm audio cable to connect to speakers if needed
+ - Microusb to usb cable adapter (otg cable)
 
-5) Microusb to usb cable adapter (otg cable)
-
-6) Midi keyboard
+ - Midi keyboard
 
 For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact, not expensive, the key range is enough, also you can edit velocity and midi cc on the device itself.
 
@@ -55,9 +55,9 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 1. Install Raspbian Lite OS in headless mode with SSH (instruction could be found in internet)
 
 2. Updade the system
-  sudo apt update 
+   sudo apt update 
 
-3. edit /boot/config.txt
+4. edit /boot/config.txt
   To disable raspbery pi default sound card
   put dtparam=audio=off
 
@@ -86,15 +86,15 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
   Adjust the sample rate with -z parameter (minimal i could use without audio distortion and much of latency was 160)
   Adjust gain with -g parameter
 
-10. Test midi keyboard connection to get a device name
+9. Test midi keyboard connection to get a device name
   amidi -l 
 
-11. Adjust midi device number in harmonium.sh
+10. Adjust midi device number in harmonium.sh
   nano ./harmonium.sh
   midi.alsa.device=hw:2,0
   Give execute permission to your script: chmod +x /home/pi/harmonium.sh
 
-10. Add Fluidsynth harmonium to start on boot
+11. Add Fluidsynth harmonium to start on boot
   nano ~/bashrc
   Add to the end of file ./harmonium.sh
 
