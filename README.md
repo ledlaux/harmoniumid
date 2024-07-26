@@ -43,9 +43,7 @@ I had a raspberry pi 0 w2 laying around so next idea came to test this instrumen
 
 2) Usb hub
 
-3) Any compact usb soundcard or hdmi vga adapter cable with audio out 
-I could not make raspbery pi audio out to work with my adapter cable so used the sound card. 
-Maybe with different cable it will work, try it. Than will be no need for a usb hub.
+3) Any compact usb soundcard or hdmi vga adapter cable with audio out (I could not make raspbery pi audio out to work with my adapter cable so used the sound card. Maybe with different cable it will work, try it. Than will be no need for a usb hub)
 
 4) 3.5mm audio cable to connect to speakers if needed
 
