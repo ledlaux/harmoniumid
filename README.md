@@ -119,7 +119,7 @@ Adjust gain with -g parameter
 ..................................................................................................................
 **Send thanks to the N'hyra Virakah for a great harmonium recording and programming!** 
 
-###**ॐ**###
+###ॐ###
 
 
 
