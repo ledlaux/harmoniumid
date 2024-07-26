@@ -29,12 +29,12 @@ This instrument has some additional settings which can be asigned to midi keyboa
 <br>
 ## A prototype of midi harmonium on Raspberry pi zero w2 
 
-I had a raspberry pi zer w2 laying around so next idea came to test this instrument on it, and it worked wonderfully!
+I had a raspberry pi zero laying around so next idea came to test this instrument on it, and it worked wonderfully!
 <br>
 <br>
 **You will need:**
 <br>
- - Raspberry pi 0 w2 with power adapter or powerbank
+ - Raspberry pi zero w2 with power adapter or powerbank
 
  - Usb hub
 
