@@ -1,7 +1,6 @@
-Midi harmonium made with Fluidsynth
+## MIDI HARMONIUM MADE WITH FLUIDSYNTH
 
-
-In search for the best free sounding harmonium virtual instrument i found N'hyra Virakah recorded harmonium in Decent sampler format
+In search for the best free sounding harmonium virtual instrument i found **N'hyra Virakah** recorded harmonium in Decent sampler format
 https://www.youtube.com/watch?v=6j1xUndPMio&t=785s
 
 Than idea arised to try to convert this decent sampler preset and try it with Fluidsynth.
@@ -14,6 +13,8 @@ https://www.patreon.com/posts/indian-harmonium-90825095
 2. Convert the preset to SFZ format with DSconverter by Eodowd
 https://github.com/eodowd/ds2sfz
 
+3. At this point you can edit attack and decay of the samples in Polyphone app
+
 3. Convert SFZ file to SF2 soundfont 
 You can use Sforzando or Polyphone to do that
 I used Polyphone console command
@@ -22,6 +23,7 @@ I used Polyphone console command
 Thats it! 
 
 Now you can load this instrument in to the Fluidsynth and play it. 
+
 To make a portable harmonium instrument to exercise with headphones you can use it with Android Fluidsynth app and midi keyboard conected to you phone.
 
 This instrument has some additional settings which can be asigned to midi keyboard:
@@ -102,7 +104,7 @@ Add to the end of file ./harmonium.sh
 PS. Loading time of the instrument can take up to 1 minute, because of the raspbery pi 0 limited resources. 
 You can make it load little faster by some tweaks (disabling bluetooth in /boot/config.txt. and other)
 
-...............................................................................
+..................................................................................................................
 
 harmonium.sh contains a Fluidsynth start command 
 
@@ -113,8 +115,10 @@ sleep 10
 Adjust the sample rate with -z parameter (minimal i could use without audio distortion and much of latency was 160)
 Adjust gain with -g parameter
 
-..............................................................................
-Send thanks to the N'hyra Virakah for a great harmonium recording and programming!  
+..................................................................................................................
+Send thanks to the N'hyra Virakah for a great harmonium recording and programming! 
+
+**ॐ**
 
 
 
