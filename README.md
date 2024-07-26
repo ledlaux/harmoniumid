@@ -3,7 +3,7 @@
 In search for the best free sounding harmonium virtual instrument i found **N'hyra Virakah** recorded harmonium in Decent sampler format:
 https://www.youtube.com/watch?v=6j1xUndPMio&t=785s
 
-Than idea arised to try to convert this decent sampler preset and try it with Fluidsynth.
+Then the idea arose to try to convert this Decent sampler preset for use with the Fluidsynth.
 <br>
 <br>
 **Instructions:**
