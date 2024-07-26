@@ -15,7 +15,7 @@ https://www.patreon.com/posts/indian-harmonium-90825095
 https://github.com/eodowd/ds2sfz
 
 3. Convert SFZ file to SF2 soundfont<br>
-You can use Sforzando or Polyphone apps to do that.  
+You can use Sforzando or Polyphone apps to do that 
 
 Thats it! 
 
