@@ -5,6 +5,7 @@ https://www.youtube.com/watch?v=6j1xUndPMio&t=785s
 
 Than idea arised to try to convert this decent sampler preset and try it with Fluidsynth.
 
+
 **Instructions:**
 
 1. Download harmonium Decent sampler preset from
@@ -22,20 +23,19 @@ I used Polyphone console command
 
 Thats it! 
 
-Now you can load this instrument in to the Fluidsynth and play it. 
 
-To make a portable harmonium instrument to exercise with headphones you can use it with Android Fluidsynth app and midi keyboard conected to you phone.
+Now you can load this instrument in to the Fluidsynth and play it. To make a portable harmonium instrument to exercise with headphones you can use it with Android Fluidsynth app and midi keyboard conected to you phone.
 
 This instrument has some additional settings which can be asigned to midi keyboard:
 Volume (CC 7)
 Reverb (CC 91)
 Chorus (CC 93)
 
-....................................................................................................................
+
 
 I had a raspberry pi 0 w2 laying around so next idea came to test this instrument on it, and it worked wonderfully!
 
-## A prototype of midi harmonium on Raspberry pi zero w2 with Keystation Mini 32 MK3 midi keyboard.
+## A prototype of midi harmonium on Raspberry pi zero w2 
 
 **You will need:**
 
@@ -83,15 +83,22 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 
 7. Copy SF2 soundfont file to the Raspberry pi home directory
 
-8. Copy script harmonium.sh file to your home directory /home/pi
+8. Copy script **harmonium.sh** file to your home directory /home/pi
 
-9. Test midi keyboard connection to get a device name
+  It is simple scipt which starts Fluidsynth with harmonium soundfont and your midi keyboard
+  #! /bin/sh
+  fluidsynth -a alsa -z 160 -m alsa_raw -o midi.alsa.device=hw:2,0 -g 1 /home/pi/filename.sf2
+  sleep 10
+
+  Adjust the sample rate with -z parameter (minimal i could use without audio distortion and much of latency was 160)
+  Adjust gain with -g parameter
+
+10. Test midi keyboard connection to get a device name
   amidi -l 
 
-  Adjust midi device number in harmonium.sh
+11. Adjust midi device number in harmonium.sh
   nano ./harmonium.sh
   midi.alsa.device=hw:2,0
-
   Give execute permission to your script: chmod +x /home/pi/harmonium.sh
 
 10. Add Fluidsynth harmonium to start on boot
@@ -105,21 +112,9 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 PS. Loading time of the instrument can take up to 1 minute, because of the raspbery pi 0 limited resources. 
 You can make it load little faster by some tweaks (disabling bluetooth in /boot/config.txt. and other)
 
-..................................................................................................................
-
-**harmonium.sh** script contains a Fluidsynth start command 
-
-#! /bin/sh
-fluidsynth -a alsa -z 160 -m alsa_raw -o midi.alsa.device=hw:2,0 -g 1 /home/pi/filename.sf2
-sleep 10
-
-Adjust the sample rate with -z parameter (minimal i could use without audio distortion and much of latency was 160)
-Adjust gain with -g parameter
-
-..................................................................................................................
 **Send thanks to the N'hyra Virakah for a great harmonium recording and programming!** 
 
-###ॐ###
+**ॐ**
 
 
 
