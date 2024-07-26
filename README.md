@@ -55,15 +55,13 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 2. Updade the system<br>
    sudo apt update 
 
-4. edit /boot/config.txt<br>
-  To disable raspbery pi default sound card<br>
+4. edit /boot/config.txt to disable raspbery pi default sound card<br>
   put dtparam=audio=off<br>
 
 5. Add user pi to audio group<br>
   usermod -a -G audio pi
 
 6. Adjust your default soundcard in alsa configuration file
-<br>
   sudo nano /etc/asound.conf<br> 
   defaults.pcm.card 1<br> 
   defaults.ctl.card 1<br>
@@ -74,7 +72,7 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 7. Copy SF2 soundfont file to the raspberry pi home directory
 
 8. Copy script **midiharmonium.sh** file to home directory /home/pi<br>
-<br>
+
   It is simple scipt which starts Fluidsynth with harmonium soundfont and your midi keyboard<br>
   
   - Adjust the sample rate with -z parameter (minimal i could use without audio distortion and much of latency was 160)<br>
@@ -84,7 +82,7 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
   amidi -l<br>
 
 10. Adjust midi device number in midiharmonium.sh file<br>
-<br>
+
   nano ./midiharmonium.sh<br>
   midi.alsa.device=hw:2,0<br>
   give execute permission to your script: chmod +x /home/pi/midiharmonium.sh<br>
