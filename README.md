@@ -9,16 +9,16 @@ Than idea arised to try to convert this decent sampler preset and try it with Fl
 
 **Instructions:**
 
-1. Download harmonium Decent sampler preset from
+1. Download harmonium Decent sampler preset from<br>
 https://www.patreon.com/posts/indian-harmonium-90825095
 
-2. Convert the preset to SFZ format with DSconverter by Eodowd
+2. Convert the preset to SFZ format with DSconverter by Eodowd<br>
 https://github.com/eodowd/ds2sfz
 
 3. At this point you can edit attack and decay of the samples in Polyphone app
 
-3. Convert SFZ file to SF2 soundfont. You can use Sforzando or Polyphone to do that.
-I used Polyphone console command
+3. Convert SFZ file to SF2 soundfont. You can use Sforzando or Polyphone to do that.<br>
+I used Polyphone console command<br>
 /Applications/polyphone.app/Contents/MacOS/polyphone -1 filename.sfz -d /Users/user -o filename     
 
 Thats it! 
@@ -59,49 +59,47 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 
 1. Install Raspbian Lite OS in headless mode with SSH (instruction could be found in internet)
 
-2. Updade the system
+2. Updade the system<br>
    sudo apt update 
 
-4. edit /boot/config.txt
-  To disable raspbery pi default sound card
-  put dtparam=audio=off
+4. edit /boot/config.txt<br>
+  To disable raspbery pi default sound card<br>
+  put dtparam=audio=off<br>
 
-5. Add user pi to audio group
+5. Add user pi to audio group<br>
   usermod -a -G audio pi
 
-6. Adjust your default soundcard in alsa configuration file
+6. Adjust your default soundcard in alsa configuration file<br>
   sudo nano /etc/asound.conf
 
-  Put 
-  defaults.pcm.card 1
-  defaults.ctl.card 1
+  Put<br> 
+  defaults.pcm.card 1<br>
+  defaults.ctl.card 1<br>
 
-6. Install Fluidsynth
+6. Install Fluidsynth<br>
   sudo apt-get install fluidsynth
 
 7. Copy SF2 soundfont file to the Raspberry pi home directory
 
-8. Copy script **harmonium.sh** file to your home directory /home/pi
-  It is simple scipt which starts Fluidsynth with harmonium soundfont and your midi keyboard
+8. Copy script **midiharmonium.sh** file to your home directory /home/pi<br>
+  It is simple scipt which starts Fluidsynth with harmonium soundfont and your midi keyboard<br>
   
-  #! /bin/sh
-  fluidsynth -a alsa -z 160 -m alsa_raw -o midi.alsa.device=hw:2,0 -g 1 /home/pi/filename.sf2
-  sleep 10
+  #! /bin/sh<br>
+  fluidsynth -a alsa -z 160 -m alsa_raw -o midi.alsa.device=hw:2,0 -g 1 /home/pi/filename.sf2<br>
+  sleep 10<br>
 
-  Adjust the sample rate with -z parameter (minimal i could use without audio distortion and much of latency was 160)
-  Adjust gain with -g parameter
+  - Adjust the sample rate with -z parameter (minimal i could use without audio distortion and much of latency was 160)<br>
+  - Adjust gain with -g parameter<br>
 
-9. Test midi keyboard connection to get a device name
-  amidi -l 
+9. Test midi keyboard connection to get a device name<br>
+  amidi -l<br>
 
-10. Adjust midi device number in harmonium.sh
-  nano ./harmonium.sh
-  midi.alsa.device=hw:2,0
-  Give execute permission to your script: chmod +x /home/pi/harmonium.sh
+10. Adjust midi device number in midiharmonium.sh file<br>
+  nano ./midiharmonium.sh<br>
+  midi.alsa.device=hw:2,0<br>
+  Give execute permission to your script: chmod +x /home/pi/midiharmonium.sh<br>
 
-11. Add Fluidsynth harmonium to start on boot
-  nano ~/bashrc
-  Add to the end of file ./harmonium.sh
+11. Add ./midiharmonium.sh to you ~/bashrc file to start Midiharmonium on boot
 
 12. Make raspbery pi sd card read-only with raspi-config settings
 
