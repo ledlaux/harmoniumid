@@ -72,7 +72,7 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 7. Copy your converted SF2 soundfont file to the raspberry pi home directory
 
 8. Copy script **midiharmonium.sh** file to home directory /home/pi<br>
-  It is simple scipt which starts Fluidsynth with harmonium soundfont and your midi keyboard<br>
+  It is simple script which starts Fluidsynth with harmonium soundfont and your midi keyboard<br>
   - Adjust the buffer size with -z parameter (minimal i could use without audio distortion and much of latency on this device was 160)<br>
   - Adjust gain with -g parameter<br>
 
