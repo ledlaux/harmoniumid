@@ -46,9 +46,6 @@ I had a raspberry pi 0 w2 laying around so next idea came to test this instrumen
 
 For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact, not expensive, the key range is enough, also you can edit velocity and midi cc on the device itself.
 <br>
-<br>
-<br>
-<br>
 **Instructions:**
 <br>
 1. Install Raspbian Lite OS in headless mode with SSH (instruction could be found in internet)
@@ -71,9 +68,9 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 6. Install Fluidsynth<br>
   sudo apt-get install fluidsynth
 
-7. Copy SF2 soundfont file to the Raspberry pi home directory
+7. Copy SF2 soundfont file to the raspberry pi home directory
 
-8. Copy script **midiharmonium.sh** file to your home directory /home/pi<br>
+8. Copy script **midiharmonium.sh** file to home directory /home/pi<br>
   It is simple scipt which starts Fluidsynth with harmonium soundfont and your midi keyboard<br>
   
   - Adjust the sample rate with -z parameter (minimal i could use without audio distortion and much of latency was 160)<br>
