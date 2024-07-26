@@ -1,14 +1,17 @@
 # MIDI HARMONIUM MADE WITH FLUIDSYNTH
-
-
+<br>
+<br>
+<br>
+<br>
 In search for the best free sounding harmonium virtual instrument i found **N'hyra Virakah** recorded harmonium in Decent sampler format:
 https://www.youtube.com/watch?v=6j1xUndPMio&t=785s
 
 Than idea arised to try to convert this decent sampler preset and try it with Fluidsynth.
-
-
+<br>
+<br>
 **Instructions:**
-
+<br>
+<br>
 1. Download harmonium Decent sampler preset from<br>
 https://www.patreon.com/posts/indian-harmonium-90825095
 
@@ -26,18 +29,20 @@ Thats it!
 Now you can load this instrument in to the Fluidsynth and play it. To make a portable harmonium instrument to exercise with headphones you can use it with Android Fluidsynth app and midi keyboard conected to you phone.
 
 This instrument has some additional settings which can be asigned to midi keyboard: volume (CC 7), reverb (CC 91), chorus (CC 93)
-
-
-
+<br>
+<br>
+<br>
+<br>
 ## A prototype of midi harmonium on Raspberry pi zero w2 
 
 I had a raspberry pi 0 w2 laying around so next idea came to test this instrument on it, and it worked wonderfully!
-
-
-
+<br>
+<br>
+<br>
+<br>
 **You will need:**
-
-
+<br>
+<br>
  - Raspberry pi 0 w2 with power adapter or powerbank
 
  - Usb hub
@@ -51,12 +56,13 @@ I had a raspberry pi 0 w2 laying around so next idea came to test this instrumen
  - Midi keyboard
 
 For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact, not expensive, the key range is enough, also you can edit velocity and midi cc on the device itself.
-
-
-
+<br>
+<br>
+<br>
+<br>
 **Instructions:**
-
-
+<br>
+<br>
 1. Install Raspbian Lite OS in headless mode with SSH (instruction could be found in internet)
 
 2. Updade the system<br>
@@ -70,11 +76,9 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
   usermod -a -G audio pi
 
 6. Adjust your default soundcard in alsa configuration file<br>
-  sudo nano /etc/asound.conf
-
-  Put<br> 
-  defaults.pcm.card 1<br>
-  defaults.ctl.card 1<br>
+  sudo nano /etc/asound.conf<br> 
+  Put: defaults.pcm.card 1<br> 
+       defaults.ctl.card 1<br>
 
 6. Install Fluidsynth<br>
   sudo apt-get install fluidsynth
