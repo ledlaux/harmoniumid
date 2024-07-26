@@ -1,4 +1,4 @@
-# MidiHarmonium running on Fluidsynth
+# MidiHarmonium on Fluidsynth
 
 In search for the best free sounding harmonium virtual instrument i found **N'hyra Virakah** recorded harmonium in Decent sampler format:
 https://www.youtube.com/watch?v=6j1xUndPMio&t=785s
