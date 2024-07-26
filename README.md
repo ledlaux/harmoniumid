@@ -31,7 +31,7 @@ Volume (CC 7)
 Reverb (CC 91)
 Chorus (CC 93)
 
-...................................................................................................................
+....................................................................................................................
 
 I had a raspberry pi 0 w2 laying around so next idea came to test this instrument on it, and it worked wonderfully!
 
@@ -107,7 +107,7 @@ You can make it load little faster by some tweaks (disabling bluetooth in /boot/
 
 ..................................................................................................................
 
-**harmonium.sh** contains a Fluidsynth start command 
+**harmonium.sh** script contains a Fluidsynth start command 
 
 #! /bin/sh
 fluidsynth -a alsa -z 160 -m alsa_raw -o midi.alsa.device=hw:2,0 -g 1 /home/pi/filename.sf2
@@ -119,7 +119,7 @@ Adjust gain with -g parameter
 ..................................................................................................................
 **Send thanks to the N'hyra Virakah for a great harmonium recording and programming!** 
 
-**ॐ**
+###**ॐ**###
 
 
 
