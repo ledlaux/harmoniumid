@@ -1,4 +1,4 @@
-# Midiharmonium made with Fluidsynth
+# MidiHarmonium made with Fluidsynth
 
 In search for the best free sounding harmonium virtual instrument i found **N'hyra Virakah** recorded harmonium in Decent sampler format:
 https://www.youtube.com/watch?v=6j1xUndPMio&t=785s
@@ -24,7 +24,7 @@ Now you can load this instrument in to the Fluidsynth and play it. To make a por
 This instrument has some additional settings which can be asigned to midi keyboard: volume (CC 7), reverb (CC 91), chorus (CC 93)
 <br>
 <br>
-## A prototype of midi harmonium on Raspberry pi zero w2 
+## A prototype of MidiHarmonium on Raspberry pi zero w2 
 
 I had a raspberry pi zero laying around so next idea came to test this instrument on it, and it worked wonderfully!
 <br>
