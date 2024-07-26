@@ -38,7 +38,7 @@ I had a raspberry pi 0 w2 laying around so next idea came to test this instrumen
 **You will need:**
 
 
- - Raspbery pi 0 w2 with power adapter or powerbank
+ - Raspberry pi 0 w2 with power adapter or powerbank
 
  - Usb hub
 
