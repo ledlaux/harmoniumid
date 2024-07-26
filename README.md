@@ -1,6 +1,7 @@
 ## MIDI HARMONIUM MADE WITH FLUIDSYNTH
 
-In search for the best free sounding harmonium virtual instrument i found **N'hyra Virakah** recorded harmonium in Decent sampler format
+
+In search for the best free sounding harmonium virtual instrument i found **N'hyra Virakah** recorded harmonium in Decent sampler format:
 https://www.youtube.com/watch?v=6j1xUndPMio&t=785s
 
 Than idea arised to try to convert this decent sampler preset and try it with Fluidsynth.
@@ -23,19 +24,15 @@ I used Polyphone console command
 
 Thats it! 
 
-
 Now you can load this instrument in to the Fluidsynth and play it. To make a portable harmonium instrument to exercise with headphones you can use it with Android Fluidsynth app and midi keyboard conected to you phone.
 
-This instrument has some additional settings which can be asigned to midi keyboard:
-Volume (CC 7)
-Reverb (CC 91)
-Chorus (CC 93)
+This instrument has some additional settings which can be asigned to midi keyboard: volume (CC 7), reverb (CC 91), chorus (CC 93)
 
 
+## A prototype of midi harmonium on Raspberry pi zero w2 
 
 I had a raspberry pi 0 w2 laying around so next idea came to test this instrument on it, and it worked wonderfully!
 
-## A prototype of midi harmonium on Raspberry pi zero w2 
 
 **You will need:**
 
@@ -62,7 +59,6 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
   sudo apt update 
 
 3. edit /boot/config.txt
-   
   To disable raspbery pi default sound card
   put dtparam=audio=off
 
@@ -82,8 +78,8 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 7. Copy SF2 soundfont file to the Raspberry pi home directory
 
 8. Copy script **harmonium.sh** file to your home directory /home/pi
-
   It is simple scipt which starts Fluidsynth with harmonium soundfont and your midi keyboard
+  
   #! /bin/sh
   fluidsynth -a alsa -z 160 -m alsa_raw -o midi.alsa.device=hw:2,0 -g 1 /home/pi/filename.sf2
   sleep 10
@@ -103,9 +99,9 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
   nano ~/bashrc
   Add to the end of file ./harmonium.sh
 
-11. Make raspbery pi sd card read-only with raspi-config settings
+12. Make raspbery pi sd card read-only with raspi-config settings
 
-12. Restart and enjoy!
+13. Restart and enjoy!
 
 PS. Loading time of the instrument can take up to 1 minute, because of the raspbery pi 0 limited resources. 
 You can make it load little faster by some tweaks (disabling bluetooth in /boot/config.txt. and other)
