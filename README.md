@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/e0a83fda-d1c7-4c1d-b45b-102a0df43bcb
 
 **You will need:**
 <br>
- - Raspberry pi zero w2 with power adapter or powerbank
+ - Raspberry pi zero w2 (or other Raspberry pi) with power adapter or powerbank
 
  - Usb hub
 
