@@ -94,7 +94,7 @@ PS. Loading time of the instrument can take up to 1 minute, because of the raspb
 You can make it load little faster by some tweaks (disabling bluetooth in /boot/config.txt. and other)
 
 ### Send your thanks to the N'hyra Virakah for a great harmonium recording and programming! 
-
+https://www.patreon.com/nhyravirakah<br>
 **ॐ**
 
 
