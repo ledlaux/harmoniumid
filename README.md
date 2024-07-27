@@ -8,7 +8,7 @@ Then the idea arose to try to convert this Decent sampler preset for use with th
 <br>
 **Instructions:**
 <br>
-1. Download harmonium Decent sampler preset from<br>
+1. Download free harmonium Decent sampler preset from N'hyra Virakah patreon page<br>
 https://www.patreon.com/posts/indian-harmonium-90825095
 
 2. Convert the preset to SFZ format with DSconverter by Eodowd<br>
