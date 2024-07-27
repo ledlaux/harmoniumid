@@ -24,7 +24,7 @@ Now you can load this instrument in to the Fluidsynth and play it. To make a por
 This instrument has some additional settings which can be asigned to midi keyboard: volume (CC 7), sustain (CC 64), reverb (CC 91), chorus (CC 93)
 <br>
 <br>
-## A prototype of Harmoniumid on Raspberry pi zero w2 
+## A prototype of Harmoniumid on Raspberry pi zero w
 
 I had a raspberry pi zero laying around so next idea came to test this instrument on it, and it worked wonderfully!
 
@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/e0a83fda-d1c7-4c1d-b45b-102a0df43bcb
 
 **You will need:**
 <br>
- - Raspberry pi zero w2 (or other Raspberry pi) with power adapter or powerbank
+ - Raspberry pi zero w (or other Raspberry pi) with power adapter or powerbank
 
  - Usb hub
 
