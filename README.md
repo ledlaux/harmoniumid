@@ -21,7 +21,7 @@ Thats it!
 
 Now you can load this instrument in to the Fluidsynth and play it. To make a portable harmonium instrument to exercise with headphones you can use it with Android Fluidsynth app and midi keyboard connected to your phone.
 
-This instrument has some additional settings which can be asigned to midi keyboard: volume (CC 7), reverb (CC 91), chorus (CC 93)
+This instrument has some additional settings which can be asigned to midi keyboard: volume (CC 7), sustain (CC 64), reverb (CC 91), chorus (CC 93)
 <br>
 <br>
 ## A prototype of MidiHarmonium on Raspberry pi zero w2 
