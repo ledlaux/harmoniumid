@@ -90,7 +90,7 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 
 13. Restart and enjoy!
 
-PS. Loading time of the instrument can take up to 1 minute, because of the raspbery pi zero limited resources. 
+PS. Loading of the instrument can take up to 1 minute, because of the raspbery pi zero booting time. 
 You can make it load little faster by some tweaks (disabling bluetooth in /boot/config.txt. and other)
 
 ### Send your thanks to N'hyra Virakah for a great harmonium recording and programming! 
