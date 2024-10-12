@@ -28,10 +28,6 @@ This instrument has some additional settings which can be asigned to midi keyboa
 
 I had a raspberry pi zero laying around so next idea came to test this instrument on it, and it worked wonderfully!
 
-
-https://github.com/user-attachments/assets/e0a83fda-d1c7-4c1d-b45b-102a0df43bcb
-
-
 **You will need:**
 <br>
  - Raspberry pi zero w (or other Raspberry pi) with power adapter or powerbank
