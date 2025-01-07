@@ -46,7 +46,7 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 <br>
 **Instructions:**
 <br>
-1. Install Raspbian Lite OS in headless mode with SSH (instruction could be found in internet)
+1. Install Raspbian Lite OS in headless mode with SSH (instruction could be found on the internet)
 
 2. Updade the system<br>
    sudo apt update 
