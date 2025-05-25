@@ -11,7 +11,7 @@ Then the idea arose to try to convert this Decent sampler preset for use with th
 1. Download free harmonium Decent sampler preset from N'hyra Virakah patreon page<br>
 https://www.patreon.com/posts/indian-harmonium-90825095
 
-2. Convert the preset to SFZ format with DSconverter by Eodowd<br>
+2. Convert preset to SFZ format with DSconverter by Eodowd<br>
 https://github.com/eodowd/ds2sfz
 
 3. Convert SFZ file to SF2 soundfont<br>
