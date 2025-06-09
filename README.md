@@ -11,13 +11,8 @@ Then the idea arose to try to convert this Decent sampler preset for use with th
 1. Download free harmonium Decent sampler preset from N'hyra Virakah patreon page<br>
 https://www.patreon.com/posts/indian-harmonium-90825095
 
-2. Convert preset to SFZ format with DSconverter by Eodowd<br>
-https://github.com/eodowd/ds2sfz
-
-3. Convert SFZ file to SF2 soundfont<br>
-You can use Sforzando or Polyphone apps to do that
-
-For the step 2 and 3 you can use ConvertWithMoss app from https://www.mossgrabers.de/Software/ConvertWithMoss/ConvertWithMoss.html
+2. Convert Decent sampler preset to SF2 soundfont<br>
+Use ConvertWithMoss app from https://www.mossgrabers.de/Software/ConvertWithMoss/ConvertWithMoss.html
 
 Thats it! 
 
