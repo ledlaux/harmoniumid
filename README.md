@@ -21,25 +21,20 @@ Now you can load this instrument in to the Fluidsynth and play it. To make a por
 This instrument has some additional settings which can be asigned to midi keyboard: volume (CC 7), sustain (CC 64), reverb (CC 91), chorus (CC 93)
 <br>
 <br>
-## A prototype of Harmoniumid on Raspberry pi zero w
+## A prototype of Harmoniumid on Raspberry Pi Zero W
 
-I had a raspberry pi zero laying around so next idea came to test this instrument on it, and it worked wonderfully!
+I had a raspberry Pi Zero laying around so next idea came to test this instrument on it, and it worked wonderfully!
 
 **You will need:**
 <br>
- - Raspberry pi zero w (or other Raspberry pi) with power adapter or powerbank
+ - Raspberry Pi Zero W (or other Raspberry pi) with power adapter or powerbank
 
- - Usb hub
-
- - Any compact usb soundcard or hdmi vga adapter cable with audio out (I could not make raspbery pi audio out to work with my adapter cable so used the sound card. Maybe with different cable it will work, try it. Than will be no need for a usb hub)
- 
- - 3.5mm audio cable to connect to speakers if needed
-
+ - USB hub
  - Microusb to usb cable adapter (otg cable)
-
+ - Usb soundcard and 3.5mm audio cable 
  - Midi keyboard
 
-For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact, not expensive, the key range is enough, also you can edit velocity and midi cc on the device itself.<br>
+For this project M-audio Keystation Mini 32 MK3 is perfect because it is not expensive, the key range is good, also you can edit velocity on the device itself and there is transposition function.<br>
 <br>
 **Instructions:**
 <br>
@@ -84,7 +79,7 @@ For this project M-audio Keystation Mini 32 MK3 is perfect because it is compact
 13. Restart and enjoy!
 
 PS. Loading of the instrument can take up to 1 minute, because of the raspbery pi zero booting time. 
-You can make it load little faster by some tweaks (disabling bluetooth in /boot/config.txt and other). 
+You can make it load little faster by some tweaks (Edit /boot/config.txt or make custom buildroot image of the linux system). 
 
 ### Send your thanks to N'hyra Virakah for a great harmonium recording and programming! 
 https://www.patreon.com/nhyravirakah<br>
